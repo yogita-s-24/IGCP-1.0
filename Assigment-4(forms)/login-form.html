@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .title{
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            margin: 0 auto;
+            background-color: wheat;
+            width: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        label{
+            font-weight: bold;
+        }
+
+        .input-box{
+            width: 250px;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            height: 25px;
+            width: 370px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .btn{
+            background-color: #4caf50;
+            border: none;
+            width: 270px;
+            padding: 8px;
+            border-radius: 2px;
+            display: block;
+            margin: 0 auto;
+        }
+        .text{
+            text-align: center;
+        }
+        .cancel-btn{
+            background-color: red;
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="title">Login Form</h1>
+        <img src="profile-user.png" alt="" >
+
+
+        <label for="user">Username</label><br />
+        <input type="text"  placeholder="Enter Username" class="input-box"  id="user" required/><br /><br />
+
+        <label for="pass">Password</label><br />
+        <input type="password" placeholder="Enter Password" class="input-box" id="pass" required/><br /><br />
+
+        <button class="btn">Register</button>
+<br/>
+        <input type="checkbox"/>Remember Me
+
+        <br/><br/>
+        <button class="cancel-btn">Cancel</button>
+
+    </div>
+</body>
+
+</html>

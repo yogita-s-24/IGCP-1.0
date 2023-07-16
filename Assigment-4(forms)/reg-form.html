@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container {
+            margin: 0 auto;
+            background-color: rgb(240, 224, 194);
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        label{
+            font-weight: bold;
+        }
+        span{
+            color: rgb(79, 79, 168);
+            cursor: pointer;
+        }
+        input{
+            width: 400px;
+            background-color: rgba(200, 190, 190, 0.733);
+            border: none;
+            height: 25px;
+            padding: 5px;
+        }
+        button{
+            background-color: #4285f4;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+        .text{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="title">Registration Form</h1>
+
+        <p>Please fill in this form to create an account.</p>
+
+        <label for="email-id">Email</label><br />
+        <input type="text" placeholder="Enter Email" id="email-id" required/><br /><br />
+
+        <label for="pass">Password</label><br />
+        <input type="passeord" placeholder="Enter Password" id="pass" required/><br /><br />
+
+        <label for="confirm-pass">Confirm Password</label><br />
+        <input type="password" placeholder="Enter Confirm Password" id="confirm-pass" required/><br /><br />
+
+        <div class="text">Already have an account? <span><a href="">SignIn</a></span></div><br /><br />
+
+        <button>Register</button>
+
+    </div>
+</body>
+
+</html>
