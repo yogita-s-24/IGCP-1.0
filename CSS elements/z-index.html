@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: tomato;
+            height: 500px;
+            width: 500px;
+         }
+
+        .btn-1{
+            position:absolute;
+            left:10px;
+            top:10px;
+            background-color: aqua;
+            width: 100px;
+            height: 50px;
+            z-index: 1 ;
+        }
+
+        .btn-2{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            background-color: bisque;
+            width: 100px;
+            height: 50px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="btn-1">Button-1</button>
+    <button class="btn-2">Button-2</button>
+</div>
+
+</body>
+</html>
+

@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hover Button</title>
     <style>
-        .my-btn{
+        .my-btn {
             background-color: tomato;
             padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
             font-size: 20px;
             color: white;
         }
+
+        .my-btn:hover::after {
+            content: attr(tooltip-message);
+            position: absolute;
+            left: 70px;
+            top: 5px;
+            width: 80px;
+            padding: 10px;
+            font-size: 15px;
+            color:white;
+            background-color: black;
+            border-radius: 5px;
+        }
     </style>
 </head>
+
 <body>
-    <button class="my-btn">Hover Me</button>
+    <button class="my-btn" tooltip-message="Click Here to Edit">Edit</button>
+    <br/><br/>
+    <button class="my-btn" tooltip-message="Click Here to Save">Save</button>
 </body>
+
 </html>

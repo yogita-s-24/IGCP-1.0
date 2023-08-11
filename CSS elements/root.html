@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --primary-color:#0084ff ;
+            --light-bg: #cce6ff;
+            --text-color: #666699;
+            --text-size:12px;
+            --sm-br:5px;
+            --md-br:10px;
+            --lg-br:15px;
+        }
+
+        .btn{
+            background-color: var(--primary-color);
+            color:var(--text-color);
+            border-radius: var(--sm-br);
+        }
+
+        .heading{
+            color:var(--text-color);
+            background-color: var(--light-bg);
+            border: 1px solid var(--primary-color);
+
+        }
+
+        .text{
+            color:var(--text-color);
+            background-color: var(--light-bg);
+            border: 1px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+<button class="btn">
+    Click Me!
+</button>
+<h1 class="heading">
+    CSS Variables
+</h1>
+
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus neque animi, voluptatibus voluptatem optio voluptates eaque temporibus tempora vel accusantium ipsum culpa, facilis excepturi illum magni facere quisquam quibusdam!</p>
+</body>
+</html>
