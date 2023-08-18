@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const rate = parseInt(prompt("Enter rate: "));
+        const quantity = parseInt(prompt("Enter quantity: "));
+
+        const bill = rate * quantity;
+        if (bill > 100) {
+            const discount = bill / 10;
+            const paybleAmount = bill - discount;
+            console.log(`Discount: ${discount} `)
+            console.log(`Payble amount: ${paybleAmount}`);
+
+        }
+        else {
+            console.log('No discount');
+            console.log(`Payble amount: ${bill}`);
+        }
+    </script>
+</body>
+
+</html>
