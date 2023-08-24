@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ClassName</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .bg-warning {
+            background-color: yellow;
+        }
+
+        .bg-danger {
+            background-color: tomato;
+        }
+
+        .bg-info {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-warning" id="box">
+        This is Box
+    </div>
+    <br>
+    <button type="button" onclick="danger()">Danger</button>
+    <button type="button" onclick="warning()">Warning</button>
+    <button type="button" onclick="info()">Info</button>
+    <button type="button" onclick="pink()">Pink</button>
+
+    <script>
+        const box = document.getElementById("box");
+        function danger() {
+            box.className = "container bg-danger"
+        }
+        function warning() {
+            box.className = "container bg-warning"
+
+        }
+        function info() {
+            box.className = "container bg-info"
+
+        }
+        function pink() {
+            box.className = "container bg-pink"
+        }
+    </script>
+
+</body>
+</html>

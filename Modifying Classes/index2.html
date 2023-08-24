@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Modifying Classes</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .bg-warning {
+            background-color: yellow;
+        }
+
+        .bg-danger {
+            background-color: tomato;
+        }
+
+        .bg-info {
+            background-color: skyblue;
+        }
+
+        .bg-pink {
+            background-color: pink;
+        }
+        .bg-primary {
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container bg-warning" id="box">
+        This is Box.
+    </div>
+    <br>
+    <button type="button" onclick="ChangeClassName('bg-danger')">Danger</button>
+    <button type="button" onclick="ChangeClassName('bg-warning')">Warning</button>
+    <button type="button" onclick="ChangeClassName('bg-info')">Info</button>
+    <button type="button" onclick="ChangeClassName('bg-pink')">Pink</button>
+    <button type="button" onclick="ChangeClassName('bg-primary')">Primary</button>
+
+    <script>
+
+        function ChangeClassName(bgName) 
+        {
+            const box = document.getElementById("box");
+            box.className = `container ${bgName}`;
+        }
+    </script>
+
+</body>
+
+</html>
