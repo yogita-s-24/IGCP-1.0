@@ -18,9 +18,30 @@
 // }
 // greet();
 
-function greet(name, day="next class")
+// function greet(name, day="next class")
+// {
+//     console.log(`Hello ${name}. Your interview is scheduled on ${day}.`);
+// }
+// greet('Suraj');
+
+
+
+
+
+
+//1.Argument and Return
+function areaOfCircle(side)
 {
-    console.log(`Hello ${name}. Your interview is scheduled on ${day}.`);
+    const area = side * side;
+    return area;
 }
-greet('Suraj');
+const A = areaOfCircle(10);
+console.log(`Area of Circle :${A} `);
+
+
+
+
+
+
+
 
