@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Array With Loop</title>
+  <style>
+    .student-card
+    {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      background-color: blueviolet;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const students = ["Achal","Kunal", "Kaveri", "Shanzey", "Suyash", "Vrushali", "Swapnali", "Yash", "Komal", "Urmila"]
+
+    for(let i=0; i<students.length; i++)
+    {
+      document.write(
+       ` <div class='student-card'>
+        Hello ${students[i]}
+      </div>`
+      )
+    }
+  </script>
+
+</body>
+</html>
