@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+  </head>
+  <body onload="hello6()">
+    <button class="btn" onclick="hello()">Click Here!</button>
+    <button class="btn" ondblclick="hello1()">Click Here!</button>
+    <button class="btn" onmouseover="hello2()">Click Here!</button>
+    <button class="btn" onmouseout="hello3()">Click Here!</button>
+    <input type="text" onchange="hello4()" />
+    <script>
+      function hello() {
+        alert("OnClick event Triggered.");
+      }
+      function hello1() {
+        alert("Ondblclick event Triggered.");
+      }
+      function hello2() {
+        alert("Onmouseover event Triggered.");
+      }
+      function hello3() {
+        alert("Onmouseout event Triggered.");
+      }
+      function hello4() {
+        console.log("Onchange Event Triggered.");
+      }
+      function hiiee() {
+        console.log("hiii");
+      }
+      function hello6() {
+        console.log("Onload event triggered");
+      }
+    </script>
+  </body>
+</html>
