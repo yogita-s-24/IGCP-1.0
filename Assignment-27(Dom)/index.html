@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events</title>
+    <style>
+        .btn {
+          
+            border: 1px solid black;
+            padding: 5px 8px;
+            margin: 5px;
+            border-radius: 9px;
+
+        }
+        .btn-green{
+            background-color: greenyellow;
+            
+        }
+        .btn-red{
+            background-color: rgb(237, 100, 100);
+            color: white;
+
+        }
+        .container{
+            width: 300px;
+            border: solid 2px black;
+            display: block;
+            margin: 0 auto;
+            padding: 50PX;
+            border-radius: 10px;
+            background-color: rgb(189, 205, 204);
+            margin-top: 150px
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Tum kaun ho?</h1>
+    <p id="answer">Answer :</p>
+
+    <button class="btn btn-green"onclick="pari()">Papa Ki Pari🧚‍♀️</button>
+    <button class="btn btn-red " onclick="ladala()">Ma Ka Ladla🙎‍♂️</button>
+</div>
+
+    <script>
+        function pari() {
+            const ans = document.getElementById("answer");
+            ans.innerText = "Answer : I am Papa ki Pari...🧚‍♀️"
+        }
+
+        function ladala() {
+            const ans = document.getElementById("answer");
+            ans.innerText = "Answer : I am Maa ka Ladala... 🙎‍♂️"
+        }
+    </script>
+
+</body>
+
+</html>
