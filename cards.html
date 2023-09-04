@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e9e4e4;
+            font-family: sans-serif;
+
+        }
+
+        .flex-box-container {
+            display: flex;
+            justify-content: space-e;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        .product-card-container {
+            width: 200px;
+            border: 2px solid orange;
+            background-color: white;
+            display: block;
+            margin: 80px auto;
+            border-radius: 9px;
+            box-shadow: 0px 0px 35px -10px gray;
+        }
+
+        .product-card-img {
+            padding: 10px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+
+
+        }
+
+        .product-tital {
+            display: block;
+            margin: 0px auto;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            color: gray;
+            line-height: 20px;
+        }
+
+        .product-mrp {
+            display: block;
+            margin: 0px auto;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(232, 7, 7);
+            font-weight: bold;
+            padding: 5px;
+
+        }
+
+        .quanity-contaoner {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .quantity-btn {
+            background-color: #9f5c26c2;
+            border: none;
+            /* font-size: 20px; */
+            padding: 10px 15px;
+            color: white;
+            font-weight: bold;
+            /* border: 2px solid rgb(0, 0, 0); */
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .product-btn {
+            display: block;
+            margin: 14px auto;
+            padding: 10px 23px 10px 23px;
+            background-color: #9f5c26c2;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .product-btn:hover {
+            margin: 14px auto;
+            padding: 10px 23px 10px 23px;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: black;
+            transition: all 0.6s ease-in;
+            cursor: pointer;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-box-container">
+
+
+
+
+
+        <!-- 1st card  -->
+
+        <div class="product-card-container ">
+            <img src="raw.webp" alt="" class="product-card-img">
+            <h4 class="product-tital">Skinn By Titan Raw 100 ML Perfume For Men EDP</h4>
+            <span class="product-mrp">MRP : START FROM 2278/-</span>
+            <hr width="80%">
+
+            <div class="quanity-contaoner">
+                <button class="quantity-btn" onclick="changeQuantity('dec', 0)">-</button>
+                <span id="quantity0">1</span>
+                <button class="quantity-btn" onclick="changeQuantity('inc', 0)">+</button>
+            </div>
+
+            <button class="product-btn">Add to Cart</button>
+
+
+        </div>
+        <div class="product-card-container ">
+            <img src="celestee.webp" alt="" class="product-card-img">
+            <h4 class="product-tital">Skinn By Titan Celeste 50 ML Perfume For Women EDP</h4>
+            <span class="product-mrp">MRP : START FROM 2278/-</span>
+            <hr width="80%">
+
+            <div class="quanity-contaoner">
+                <button class="quantity-btn" onclick="changeQuantity('dec', 1)">-</button>
+                <span id="quantity1">1</span>
+                <button class="quantity-btn" onclick="changeQuantity('inc', 1)">+</button>
+            </div>
+
+            <button class="product-btn">Add to Cart</button>
+
+
+        </div>
+
+        <div class="product-card-container ">
+            <img src="nora.webp" alt="" class="product-card-img">
+            <h4 class="product-tital">Skinn By Titan Noura Floret Eau De Parfum For Her
+                (100ml)</h4>
+            <span class="product-mrp">MRP : START FROM 3095/-</span>
+            <hr width="80%">
+
+            <div class="quanity-contaoner">
+                <button class="quantity-btn" onclick="changeQuantity('dec', 2)">-</button>
+                <span id="quantity2">1</span>
+                <button class="quantity-btn" onclick="changeQuantity('inc', 2)">+</button>
+            </div>
+
+            <button class="product-btn">Add to Cart</button>
+
+
+        </div>
+
+        <div class="product-card-container ">
+            <img src="amalfi.webp" alt="" class="product-card-img">
+            <h4 class="product-tital">Skinn By Titan Amalfi Bleu 30ML Perfume For Women</h4>
+            <span class="product-mrp">MRP : START FROM 1505/-</span>
+            <hr width="80%">
+
+            <div class="quanity-contaoner">
+                <button class="quantity-btn" onclick="changeQuantity('dec', 3)">-</button>
+                <span id="quantity3">1</span>
+                <button class="quantity-btn" onclick="changeQuantity('inc', 3)">+</button>
+            </div>
+
+            <button class="product-btn">Add to Cart</button>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        const quantities = [1,1,1,1];
+
+        function changeQuantity(op, ind) {
+            const quantElement = document.getElementById(`quantity${ind}`);
+
+            const quantity = quantities[ind];
+
+            if (op == 'dec' && quantity == 1) {
+                alert('Minimum Quantity Can be 1')
+                return
+            }
+            if (op == 'inc' && quantity == 10) {
+                alert('Minimum Quantity Can be 10')
+                return
+            }
+            if (op == 'inc') {
+                quantities[ind]++;
+            } else {
+                quantities[ind]--;
+            }
+            quantElement.innerText = quantities[ind];
+
+        }
+
+    </script>
+</body>
+
+</html>
