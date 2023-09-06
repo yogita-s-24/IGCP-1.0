@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cards</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #e9e4e4;
+            background-color: #f5e8e8;
             font-family: sans-serif;
-
         }
 
         .flex-box-container {
@@ -20,12 +19,11 @@
             justify-content: space-e;
             align-items: center;
             width: 100%;
-
         }
 
         .product-card-container {
             width: 200px;
-            border: 2px solid orange;
+            border: 2px solid #f211d4c2;
             background-color: white;
             display: block;
             margin: 80px auto;
@@ -39,8 +37,6 @@
             display: block;
             margin: 0 auto;
             border-radius: 10px;
-
-
         }
 
         .product-tital {
@@ -62,24 +58,20 @@
             color: rgb(232, 7, 7);
             font-weight: bold;
             padding: 5px;
-
         }
 
         .quanity-contaoner {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-
         }
 
         .quantity-btn {
-            background-color: #9f5c26c2;
+            background-color: #f211d4c2;
             border: none;
-            /* font-size: 20px; */
             padding: 10px 15px;
             color: white;
             font-weight: bold;
-            /* border: 2px solid rgb(0, 0, 0); */
             border-radius: 10px;
             font-size: 18px;
         }
@@ -88,7 +80,7 @@
             display: block;
             margin: 14px auto;
             padding: 10px 23px 10px 23px;
-            background-color: #9f5c26c2;
+            background-color: #f211d4c2;
             color: white;
             border-radius: 10px;
             font-size: 16px;
@@ -114,96 +106,72 @@
 </head>
 
 <body>
-
     <div class="flex-box-container">
-
-
-
-
-
         <!-- 1st card  -->
-
         <div class="product-card-container ">
-            <img src="raw.webp" alt="" class="product-card-img">
-            <h4 class="product-tital">Skinn By Titan Raw 100 ML Perfume For Men EDP</h4>
-            <span class="product-mrp">MRP : START FROM 2278/-</span>
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/4/e457e8c8904173505381_1.jpg"
+                alt="" class="product-card-img">
+            <h4 class="product-tital">Skin Perfume For Women(100ML)</h4>
+            <span class="product-mrp">₹ 2250/-</span>
             <hr width="80%">
-
             <div class="quanity-contaoner">
                 <button class="quantity-btn" onclick="changeQuantity('dec', 0)">-</button>
                 <span id="quantity0">1</span>
                 <button class="quantity-btn" onclick="changeQuantity('inc', 0)">+</button>
             </div>
-
             <button class="product-btn">Add to Cart</button>
-
-
         </div>
-        <div class="product-card-container ">
-            <img src="celestee.webp" alt="" class="product-card-img">
-            <h4 class="product-tital">Skinn By Titan Celeste 50 ML Perfume For Women EDP</h4>
-            <span class="product-mrp">MRP : START FROM 2278/-</span>
-            <hr width="80%">
 
+        <div class="product-card-container ">
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/3/3360377002951_2.jpg"
+                alt="" class="product-card-img">
+            <h4 class="product-tital">Skin Perfume For Women EDP (50ML)</h4>
+            <span class="product-mrp">₹ 2222/-</span>
+            <hr width="80%">
             <div class="quanity-contaoner">
                 <button class="quantity-btn" onclick="changeQuantity('dec', 1)">-</button>
                 <span id="quantity1">1</span>
                 <button class="quantity-btn" onclick="changeQuantity('inc', 1)">+</button>
             </div>
-
             <button class="product-btn">Add to Cart</button>
-
-
         </div>
 
         <div class="product-card-container ">
-            <img src="nora.webp" alt="" class="product-card-img">
-            <h4 class="product-tital">Skinn By Titan Noura Floret Eau De Parfum For Her
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/2/e20f3c13349668508471_1.jpg"
+                alt="" class="product-card-img">
+            <h4 class="product-tital">Skin Noura Floret Eau De Parfum For Her
                 (100ml)</h4>
-            <span class="product-mrp">MRP : START FROM 3095/-</span>
+            <span class="product-mrp">₹ 395/-</span>
             <hr width="80%">
-
             <div class="quanity-contaoner">
                 <button class="quantity-btn" onclick="changeQuantity('dec', 2)">-</button>
                 <span id="quantity2">1</span>
                 <button class="quantity-btn" onclick="changeQuantity('inc', 2)">+</button>
             </div>
-
             <button class="product-btn">Add to Cart</button>
-
-
         </div>
 
         <div class="product-card-container ">
-            <img src="amalfi.webp" alt="" class="product-card-img">
-            <h4 class="product-tital">Skinn By Titan Amalfi Bleu 30ML Perfume For Women</h4>
-            <span class="product-mrp">MRP : START FROM 1505/-</span>
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/9/b9676e2VICTO00000062.jpg"
+                alt="" class="product-card-img">
+            <h4 class="product-tital">Skinn By Titan Amalfi Bleu (30ML) Perfume For Women</h4>
+            <span class="product-mrp">₹ 1505/-</span>
             <hr width="80%">
-
             <div class="quanity-contaoner">
                 <button class="quantity-btn" onclick="changeQuantity('dec', 3)">-</button>
                 <span id="quantity3">1</span>
                 <button class="quantity-btn" onclick="changeQuantity('inc', 3)">+</button>
             </div>
-
             <button class="product-btn">Add to Cart</button>
-
-
         </div>
-
     </div>
 
 
     <script>
-
-
-        const quantities = [1,1,1,1];
-
+        const quantities = [1, 1, 1, 1];
         function changeQuantity(op, ind) {
             const quantElement = document.getElementById(`quantity${ind}`);
-
             const quantity = quantities[ind];
-
             if (op == 'dec' && quantity == 1) {
                 alert('Minimum Quantity Can be 1')
                 return
@@ -218,9 +186,7 @@
                 quantities[ind]--;
             }
             quantElement.innerText = quantities[ind];
-
         }
-
     </script>
 </body>
 
