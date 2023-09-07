@@ -17,6 +17,16 @@
         h1{
             text-align: center;
         }
+        .student-card{
+            padding-left: 10px;
+        }
+        .img{
+            height: 150px;
+            width: 150px;
+            margin-left:5px;
+            margin-top: 15px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -102,11 +112,16 @@ const studentList = document.getElementById("stud-list");
 for(let i=0; i<=students.length; i++){
 const student = students[i];
 
-    studentList.innerHTML += `<div class="student-container">
-        <img src="https://www.isro.gov.in/media_isro/image/media/VicePresident/photo_large.jpg.webp" height=100px>
-        <h5> Name : ${student.name} </h5>
-        <h5> Age : ${student.age} </h5>
-        <h6> Tagline : ${student.tagline} </h6>
+    studentList.innerHTML += 
+    `<div class="student-container">
+        <div class='img'>
+            <img src="https://www.isro.gov.in/media_isro/image/media/VicePresident/photo_large.jpg.webp" height=100px>
+        </div>
+        <div class="student-card">
+            <h3> Name : ${student.name} </h3>
+            <h3> Age : ${student.age} </h3>
+            <h3> Tagline : ${student.tagline} </h3>
+        </div>
     </div>` 
     
 
