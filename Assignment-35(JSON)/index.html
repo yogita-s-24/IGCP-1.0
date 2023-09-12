@@ -1,119 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .student-container{
-            border: 1px solid  black;
-            width: 50%;
-            background-color: aquamarine;
-            display: flex;
-            margin: 0 auto;
-            margin-top: 5px;
-        }
+      .student-container {
+        border: 1px solid black;
+        width: 50%;
+        background-color: aquamarine;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 5px;
+      }
 
-        h1{
-            text-align: center;
-        }
-        .student-card{
-            padding-left: 10px;
-        }
-        .img{
-            height: 150px;
-            width: 150px;
-            margin-left:5px;
-            margin-top: 15px;
-            border-radius: 50%;
-        }
+      h1 {
+        text-align: center;
+      }
+      .student-card {
+        padding-left: 10px;
+      }
+      .img {
+        height: 150px;
+        width: 150px;
+        margin-left: 5px;
+        margin-top: 15px;
+        border-radius: 50%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Scientist Cards</h1>
     <div class="stud-cards" id="stud-list"></div>
 
     <script>
-        const students=[
-    {
-        "name": "John Doe",
-        "age": 25,
-        "email": "john@example.com",
-        "ImageUrl": "https://www.isro.gov.in/media_isro/image/media/VicePresident/photo_large.jpg.webp",
-        "tagline": "Living life to the fullest!"
-    },
-    {
-        "name": "Jane Smith",
-        "age": 30,
-        "email": "jane@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQdE0mUSYoqlGai7aYefNElCFjEVAXjQhYA&usqp=CAU",
-        "tagline": "Exploring the world, one step at a time."
-    },
-    {
-        "name": "Michael Johnson",
-        "age": 28,
-        "email": "michael@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9GP1Mm9928uitVX8f4q31viUeNc9ak3M2A&usqp=CAU",
-        "tagline": "Passionate about coding and coffee."
-    },
-    {
-        "name": "Emily Davis",
-        "age": 22,
-        "email": "emily@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOKjUccPp2-DHY8SRwIgSeeTNaqE8uY4hOQ&usqp=CAU",
-        "tagline": "Nature lover and aspiring artist."
-    },
-    {
-        "name": "Robert Brown",
-        "age": 35,
-        "email": "robert@example.com",
-        "ImageUrl": "https://example.com/robert.jpg",
-        "tagline": "Always seeking new challenges."
-    },
-    {
-        "name": "Sophia Martinez",
-        "age": 27,
-        "email": "sophia@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1bsRIsedTfyeghSfU7I1rxsziLlZ73PWGw&usqp=CAU",
-        "tagline": "Believer in the power of kindness."
-    },
-    {
-        "name": "William Thompson",
-        "age": 29,
-        "email": "william@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yQZXKkfiQ_fd14PIOQWpjNAK-KsWmIbfLw&usqp=CAU",
-        "tagline": "Striving for a better tomorrow."
-    },
-    {
-        "name": "Olivia Wilson",
-        "age": 24,
-        "email": "olivia@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yQZXKkfiQ_fd14PIOQWpjNAK-KsWmIbfLw&usqp=CAU",
-        "tagline": "Making memories around the world."
-    },
-    {
-        "name": "James Harris",
-        "age": 31,
-        "email": "james@example.com",
-        "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCXkPC5dsA0bVvWrrMasAKS3M2-flgTSIeg&usqp=CAU",
-        "tagline": "Living with no regrets."
-    },
-    {
-        "name": "Ava Turner",
-        "age": 26,
-        "email": "ava@example.com",
-        "ImageUrl": "",
-        "tagline": "Embracing the beauty of simplicity."
-    }
-]
+      const students = [
+        {
+          name: "John Doe",
+          age: 25,
+          email: "john@example.com",
+          ImageUrl:
+            "https://www.isro.gov.in/media_isro/image/media/VicePresident/photo_large.jpg.webp",
+          tagline: "Living life to the fullest!",
+        },
+        {
+          name: "Jane Smith",
+          age: 30,
+          email: "jane@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQdE0mUSYoqlGai7aYefNElCFjEVAXjQhYA&usqp=CAU",
+          tagline: "Exploring the world, one step at a time.",
+        },
+        {
+          name: "Michael Johnson",
+          age: 28,
+          email: "michael@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9GP1Mm9928uitVX8f4q31viUeNc9ak3M2A&usqp=CAU",
+          tagline: "Passionate about coding and coffee.",
+        },
+        {
+          name: "Emily Davis",
+          age: 22,
+          email: "emily@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOKjUccPp2-DHY8SRwIgSeeTNaqE8uY4hOQ&usqp=CAU",
+          tagline: "Nature lover and aspiring artist.",
+        },
+        {
+          name: "Robert Brown",
+          age: 35,
+          email: "robert@example.com",
+          ImageUrl: "https://example.com/robert.jpg",
+          tagline: "Always seeking new challenges.",
+        },
+        {
+          name: "Sophia Martinez",
+          age: 27,
+          email: "sophia@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1bsRIsedTfyeghSfU7I1rxsziLlZ73PWGw&usqp=CAU",
+          tagline: "Believer in the power of kindness.",
+        },
+        {
+          name: "William Thompson",
+          age: 29,
+          email: "william@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yQZXKkfiQ_fd14PIOQWpjNAK-KsWmIbfLw&usqp=CAU",
+          tagline: "Striving for a better tomorrow.",
+        },
+        {
+          name: "Olivia Wilson",
+          age: 24,
+          email: "olivia@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yQZXKkfiQ_fd14PIOQWpjNAK-KsWmIbfLw&usqp=CAU",
+          tagline: "Making memories around the world.",
+        },
+        {
+          name: "James Harris",
+          age: 31,
+          email: "james@example.com",
+          ImageUrl:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCXkPC5dsA0bVvWrrMasAKS3M2-flgTSIeg&usqp=CAU",
+          tagline: "Living with no regrets.",
+        },
+       
+      ];
 
-const studentList = document.getElementById("stud-list");
+      const studentList = document.getElementById("stud-list");
 
-for(let i=0; i<=students.length; i++){
-const student = students[i];
+      for (let i = 0; i <= students.length; i++) {
+        const student = students[i];
 
-    studentList.innerHTML += 
-    `<div class="student-container">
+        studentList.innerHTML += `<div class="student-container">
         <div class='img'>
             <img src="https://www.isro.gov.in/media_isro/image/media/VicePresident/photo_large.jpg.webp" height=100px>
         </div>
@@ -122,10 +123,8 @@ const student = students[i];
             <h3> Age : ${student.age} </h3>
             <h3> Tagline : ${student.tagline} </h3>
         </div>
-    </div>` 
-    
-
-}
+    </div>`;
+      }
     </script>
-</body>
+  </body>
 </html>
